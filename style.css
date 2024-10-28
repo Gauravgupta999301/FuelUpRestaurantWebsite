@@ -1,1 +1,559 @@
-@import url(https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap);@-ms-viewport{width:device-width}*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}body{font-size:62.5%;font-family:'Courier New',Courier,monospace;overflow-x:hidden;overflow-y: hidden;}.loading{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);z-index:11;width:100vw;height:100vh;background-color:rgb(0,0,0);color:#fff;font-family:'Cedarville Cursive',cursive}.loading img{position:absolute;top:40%;left:50%;transform:translate(-50%,-50%);width:100px;height:100px;background-color:#fff;border-radius:50%;box-shadow:0 0 20px #fff;animation:rotate 20s linear infinite}.loading p{position:absolute;color:#fff;top:62%;left:50%;font-size:34px;transform:translate(-50%,-50%);animation:blink-in-out 2s linear infinite alternate}@keyframes blink-in-out{from{color:rgb(68,68,68)}to{color:#fff}}@keyframes rotate{from{transform:translate(-50%,-50%) rotate(0)}to{transform:translate(-50%,-50%) rotate(360deg)}}a{display:flex;justify-content:center;align-items:flex-start}.pop-thanks{font-family:Arial,Helvetica,sans-serif;position:fixed;width:100%;height:100%;top:0%;left:0%;display:none;background-color:rgba(0,0,0,.20);backdrop-filter:blur(4px);animation:easeIn 300ms ease;z-index:1111}.pop{position:fixed;top:20%;left:10%;display:flex;justify-content:center;align-items:center;text-align:center;font-family:monospace,'Courier New',Courier;flex-direction:column;background-color:rgba(0,0,0,.556);word-wrap:break-word;font-size:1.2rem;padding:50px;color:#fff;border-radius:10px;width:80%;height:60%;animation:scale 400ms ease-in-out}.pop p{margin-bottom:1px;pointer-events:none}.pop button{padding:10px;font-size:1.8rem;border-radius:7px;border:none;background-color:rgb(78,78,208);color:#fff;cursor:pointer}header{height:25vh;display:flex;justify-content:center;align-items:center;width:100%;margin:auto;position:relative;font-size:25px;font-weight:900;text-transform:uppercase;background-color:#000;color:#bf0707}.span2{position:absolute;left:12%;line-height:2rem}.span1{position:absolute;right:12%;line-height:2rem}header a{width:100px;height:100px;background-color:transparent;position:absolute;z-index:11;border-radius:50%}.logo{border:none;max-width:75%;max-height:75%;background-color:#fff;border-radius:50%;box-shadow:0rem 0rem .5rem rgb(212,210,210)}.container-title{height:75vh;width:100%;display:flex;position:relative}.title-video{position:absolute;border-radius:5px;top:0;left:0;right:0;bottom:0;margin:auto;width:94%;height:92%;object-fit:cover;object-position:center}.title{color:rgb(255,255,255);display:flex;justify-content:center;align-items:center;font-size:1.4rem;text-shadow:1px 1px 2px #000;font-weight:300;width:100%;height:100%;filter:blur()}.title h1{z-index:1}.main-carousel-container{margin-top:1rem;height:100vh;width:100%;touch-action:none;position:relative}.carousel-container{width:100%;height:100%;position:relative;overflow-x:hidden}.carousel-container img{width:100%;height:100%;position:absolute;object-fit:cover;transition:transform 0.5s ease-in-out}.main-carousel-container button{display:flex;justify-content:center;align-items:center;border-radius:50%;border:none;box-shadow:0rem 0rem .5rem #fff;cursor:pointer;width:3rem;height:3rem}.left{position:absolute;bottom:5%;left:5%}.right{position:absolute;bottom:5%;right:5%}button .arrow{width:3rem;height:3rem}.available{display:flex;height:400px;width:100%;font-family:'Courier New',Courier,monospace;font-weight:300;justify-content:center;align-items:center;text-align:center;line-height:1.8rem;font-size:1.5rem;text-transform:uppercase}.menu{height:120px;width:100%;background-color:#000;color:#fff;display:flex;justify-content:space-around;align-items:center;font-size:1.2rem;flex-direction:row}.menu p{margin:15px;text-transform:uppercase}.menu a{font-size:70%;color:#000;background-color:#fff;text-decoration:none;margin:15px;padding:5px;font-weight:500;border-radius:2px;font-size:1.6rem}.about-us{height:20rem;width:100%;display:flex;flex-direction:row}.about-us .picture{flex:1 0 50%;width:26rem;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:column}.about-us .picture img{height:90%;object-fit:cover;border-radius:3px;box-shadow:8px 8px #000}.about-us .information{padding:30px;display:flex;justify-content:center;align-items:start;flex-direction:column}.about-us .information h1{padding-bottom:10px}.about-us .information p{font-size:1rem}.form-container{height:500px;width:100%;display:flex;justify-content:center;align-items:center;flex-direction:column;position:relative;margin-bottom:50px}.form-container p{text-align:center;font-size:2.5rem;padding-top:4rem;z-index:1;font-weight:800;text-shadow:.5px .5px 1px rgba(255,255,255,.765)}.decoration{height:40%;background-color:antiquewhite;width:100%;position:absolute;top:0%;z-index:-1;background:center/cover no-repeat url(./images/Anime\ Food.gif)}.form-container .form{scale:.8;display:flex;justify-content:center;align-items:center;flex-direction:column;margin-top:10px;background-color:rgba(0,0,0,.994);padding:1.3rem;border-radius:5px;color:#fff;font-size:.7rem;width:20rem;height:400px}.form-container .form input,textarea{margin:10px;border:none;border-bottom:1px solid #000;background-color:rgb(120,119,119);padding:6px 20px;border-radius:2px;color:#fff;width:90%;border-right:4px solid #fff}input::-webkit-input-placeholder{color:transparent}input:focus::-webkit-input-placeholder{color:#f8f3f3}#content{word-wrap:break-word}.form-container .form label{font-size:.9rem;font-weight:500;align-self:flex-start;padding-left:.8rem}#form-btn{text-transform:uppercase;text-align:center;align-self:center;margin-top:1rem;padding:5px;border:none;font-size:1.1rem;border-radius:2px;color:#000;background-color:#fff;cursor:pointer}.opening{width:100%;height:200px;display:flex;font-size:1.3rem;color:#fff;background-color:#000;align-items:flex-end}.timing,.timing-more{height:94%;display:flex;align-items:center;justify-content:center;flex-direction:column;border:3px solid #fff;padding:5px}.timing{text-align:center;width:50%;border-right:1px solid #fff}.timing-more{width:50%}.morning{margin-bottom:10px}.evening{margin-top:10px}.timing-more p,.timing-more span{display:flex;justify-content:center;align-items:center;text-align:center}#name{font-family:'Cedarville Cursive',cursive;padding:5px;font-size:1.3rem;text-align:center;background-color:#000;color:#fff}.contact-us{height:300px;display:flex;justify-content:center;align-items:flex-start;padding-left:10%;padding-right:5px;flex-direction:column;font-size:1.1rem;color:#fff;background-color:#000;border-bottom:.7px solid #fff}.contact-us span,.opening span{font-weight:800}@media screen and (max-width:900px){.about-us{margin:4rem 0;height:40rem;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.about-us .picture{flex:1 0 50%;width:50%;height:100%;display:flex;justify-content:center;align-items:center;flex-direction:column}.about-us .picture img{width:120%;height:80%;object-fit:cover;border-radius:3px;box-shadow:8px 8px #000;object-position:top}.about-us .information{padding:30px;font-size:.9rem;display:flex;justify-content:center;align-items:start;flex-direction:column}}@media screen and (max-width:800px){.span2{left:5px}.span1{right:5px;text-align:right}}@media screen and (max-width:500px){header{font-size:18px}}.about-us{margin:8rem 0}@media screen and (max-width:281px){.pop{padding:2px}}@media screen and (max-width:350px){.form-container form{border-radius:0}header{font-size:11px;font-weight:900}.about-us{margin:15rem 0;height:40rem;width:100%;display:flex;flex-direction:column;justify-content:center;align-items:center}.pop{padding:20px}.span2,.span1{line-height:28px}}@media screen and (max-width:899px) and (min-width:540px){.about-us .information{padding:30px 3.3rem}}@keyframes easeIn{from{opacity:0}to{opacity:1}}@keyframes scale{from{scale:0}to{scale:1}}@media screen and (max-height:365px){.span2,.span1{line-height:12px}}
+@import url(https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap);
+@-ms-viewport {
+    width:device-width
+}
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    -webkit-tap-highlight-color:transparent
+}
+body {
+    font-size:62.5%;
+    font-family:'Courier New',Courier,monospace;
+    overflow-x:hidden;
+    overflow-y: hidden;
+}
+.loading {
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:11;
+    width:100vw;
+    height:100vh;
+    background-color:rgb(0,0,0);
+    color:#fff;
+    font-family:'Cedarville Cursive',cursive
+}
+.loading img {
+    position:absolute;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100px;
+    height:100px;
+    background-color:#fff;
+    border-radius:50%;
+    box-shadow:0 0 20px #fff;
+    animation:rotate 20s linear infinite
+}
+.loading p {
+    position:absolute;
+    color:#fff;
+    top:62%;
+    left:50%;
+    font-size:34px;
+    transform:translate(-50%,-50%);
+    animation:blink-in-out 2s linear infinite alternate
+}
+@keyframes blink-in-out {
+    from {
+        color:rgb(68,68,68)
+    }
+    to {
+        color:#fff
+    }
+}
+@keyframes rotate {
+    from {
+        transform:translate(-50%,-50%) rotate(0)
+    }
+    to {
+        transform:translate(-50%,-50%) rotate(360deg)
+    }
+}
+a {
+    display:flex;
+    justify-content:center;
+    align-items:flex-start
+}
+.pop-thanks {
+    font-family:Arial,Helvetica,sans-serif;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0%;
+    left:0%;
+    display:none;
+    background-color:rgba(0,0,0,.20);
+    backdrop-filter:blur(4px);
+    animation:easeIn 300ms ease;
+    z-index:1111
+}
+.pop {
+    position:fixed;
+    top:20%;
+    left:10%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    font-family:monospace,'Courier New',Courier;
+    flex-direction:column;
+    background-color:rgba(0,0,0,.556);
+    word-wrap:break-word;
+    font-size:1.2rem;
+    padding:50px;
+    color:#fff;
+    border-radius:10px;
+    width:80%;
+    height:60%;
+    animation:scale 400ms ease-in-out
+}
+.pop p {
+    margin-bottom:1px;
+    pointer-events:none
+}
+.pop button {
+    padding:10px;
+    font-size:1.8rem;
+    border-radius:7px;
+    border:none;
+    background-color:rgb(78,78,208);
+    color:#fff;
+    cursor:pointer
+}
+header {
+    height:25vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:100%;
+    margin:auto;
+    position:relative;
+    font-size:25px;
+    font-weight:900;
+    text-transform:uppercase;
+    background-color:#000;
+    color:#bf0707
+}
+.span2 {
+    position:absolute;
+    left:12%;
+    line-height:2rem
+}
+.span1 {
+    position:absolute;
+    right:12%;
+    line-height:2rem
+}
+header a {
+    width:100px;
+    height:100px;
+    background-color:transparent;
+    position:absolute;
+    z-index:11;
+    border-radius:50%
+}
+.logo {
+    border:none;
+    max-width:75%;
+    max-height:75%;
+    background-color:#fff;
+    border-radius:50%;
+    box-shadow:0rem 0rem .5rem rgb(212,210,210)
+}
+.container-title {
+    height:75vh;
+    width:100%;
+    display:flex;
+    position:relative
+}
+.title-video {
+    position:absolute;
+    border-radius:5px;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+    width:94%;
+    height:92%;
+    object-fit:cover;
+    object-position:center
+}
+.title {
+    color:rgb(255,255,255);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.4rem;
+    text-shadow:1px 1px 2px #000;
+    font-weight:300;
+    width:100%;
+    height:100%;
+    filter:blur()
+}
+.title h1 {
+    z-index:1
+}
+.main-carousel-container {
+    margin-top:1rem;
+    height:100vh;
+    width:100%;
+    touch-action:none;
+    position:relative
+}
+.carousel-container {
+    width:100%;
+    height:100%;
+    position:relative;
+    overflow-x:hidden
+}
+.carousel-container img {
+    width:100%;
+    height:100%;
+    position:absolute;
+    object-fit:cover;
+    transition:transform 0.5s ease-in-out
+}
+.main-carousel-container button {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    border:none;
+    box-shadow:0rem 0rem .5rem #fff;
+    cursor:pointer;
+    width:3rem;
+    height:3rem
+}
+.left {
+    position:absolute;
+    bottom:5%;
+    left:5%
+}
+.right {
+    position:absolute;
+    bottom:5%;
+    right:5%
+}
+button .arrow {
+    width:3rem;
+    height:3rem
+}
+.available {
+    display:flex;
+    height:400px;
+    width:100%;
+    font-family:'Courier New',Courier,monospace;
+    font-weight:300;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    line-height:1.8rem;
+    font-size:1.5rem;
+    text-transform:uppercase
+}
+.menu {
+    height:120px;
+    width:100%;
+    background-color:#000;
+    color:#fff;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    font-size:1.2rem;
+    flex-direction:row
+}
+.menu p {
+    margin:15px;
+    text-transform:uppercase
+}
+.menu a {
+    font-size:70%;
+    color:#000;
+    background-color:#fff;
+    text-decoration:none;
+    margin:15px;
+    padding:5px;
+    font-weight:500;
+    border-radius:2px;
+    font-size:1.6rem
+}
+.about-us {
+    height:20rem;
+    width:100%;
+    display:flex;
+    flex-direction:row
+}
+.about-us .picture {
+    flex:1 0 50%;
+    width:26rem;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column
+}
+.about-us .picture img {
+    height:90%;
+    object-fit:cover;
+    border-radius:3px;
+    box-shadow:8px 8px #000
+}
+.about-us .information {
+    padding:30px;
+    display:flex;
+    justify-content:center;
+    align-items:start;
+    flex-direction:column
+}
+.about-us .information h1 {
+    padding-bottom:10px
+}
+.about-us .information p {
+    font-size:1rem
+}
+.form-container {
+    height:500px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    position:relative;
+    margin-bottom:50px
+}
+.form-container p {
+    text-align:center;
+    font-size:2.5rem;
+    padding-top:4rem;
+    z-index:1;
+    font-weight:800;
+    text-shadow:.5px .5px 1px rgba(255,255,255,.765)
+}
+.decoration {
+    height:40%;
+    background-color:antiquewhite;
+    width:100%;
+    position:absolute;
+    top:0%;
+    z-index:-1;
+    background:center/cover no-repeat url(./images/Anime\ Food.gif)
+}
+.form-container .form {
+    scale:.8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:10px;
+    background-color:rgba(0,0,0,.994);
+    padding:1.3rem;
+    border-radius:5px;
+    color:#fff;
+    font-size:.7rem;
+    width:20rem;
+    height:400px
+}
+.form-container .form input,textarea {
+    margin:10px;
+    border:none;
+    border-bottom:1px solid #000;
+    background-color:rgb(120,119,119);
+    padding:6px 20px;
+    border-radius:2px;
+    color:#fff;
+    width:90%;
+    border-right:4px solid #fff
+}
+input::-webkit-input-placeholder {
+    color:transparent
+}
+input:focus::-webkit-input-placeholder {
+    color:#f8f3f3
+}
+#content {
+    word-wrap:break-word
+}
+.form-container .form label {
+    font-size:.9rem;
+    font-weight:500;
+    align-self:flex-start;
+    padding-left:.8rem
+}
+#form-btn {
+    text-transform:uppercase;
+    text-align:center;
+    align-self:center;
+    margin-top:1rem;
+    padding:5px;
+    border:none;
+    font-size:1.1rem;
+    border-radius:2px;
+    color:#000;
+    background-color:#fff;
+    cursor:pointer
+}
+.opening {
+    width:100%;
+    height:200px;
+    display:flex;
+    font-size:1.3rem;
+    color:#fff;
+    background-color:#000;
+    align-items:flex-end
+}
+.timing,.timing-more {
+    height:94%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+    border:3px solid #fff;
+    padding:5px
+}
+.timing {
+    text-align:center;
+    width:50%;
+    border-right:1px solid #fff
+}
+.timing-more {
+    width:50%
+}
+.morning {
+    margin-bottom:10px
+}
+.evening {
+    margin-top:10px
+}
+.timing-more p,.timing-more span {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center
+}
+#name {
+    font-family:'Cedarville Cursive',cursive;
+    padding:5px;
+    font-size:1.3rem;
+    text-align:center;
+    background-color:#000;
+    color:#fff
+}
+.contact-us {
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    padding-left:10%;
+    padding-right:5px;
+    flex-direction:column;
+    font-size:1.1rem;
+    color:#fff;
+    background-color:#000;
+    border-bottom:.7px solid #fff
+}
+.contact-us span,.opening span {
+    font-weight:800
+}
+@media screen and (max-width:900px) {
+    .about-us {
+        margin:4rem 0;
+        height:40rem;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center
+    }
+    .about-us .picture {
+        flex:1 0 50%;
+        width:50%;
+        height:100%;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex-direction:column
+    }
+    .about-us .picture img {
+        width:120%;
+        height:80%;
+        object-fit:cover;
+        border-radius:3px;
+        box-shadow:8px 8px #000;
+        object-position:top
+    }
+    .about-us .information {
+        padding:30px;
+        font-size:.9rem;
+        display:flex;
+        justify-content:center;
+        align-items:start;
+        flex-direction:column
+    }
+}
+@media screen and (max-width:800px) {
+    .span2 {
+        left:5px
+    }
+    .span1 {
+        right:5px;
+        text-align:right
+    }
+}
+@media screen and (max-width:500px) {
+    header {
+        font-size:18px
+    }
+}
+.about-us {
+    margin:8rem 0
+}
+@media screen and (max-width:281px) {
+    .pop {
+        padding:2px
+    }
+}
+@media screen and (max-width:350px) {
+    .form-container form {
+        border-radius:0
+    }
+    header {
+        font-size:11px;
+        font-weight:900
+    }
+    .about-us {
+        margin:15rem 0;
+        height:40rem;
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center
+    }
+    .pop {
+        padding:20px
+    }
+    .span2,.span1 {
+        line-height:28px
+    }
+}
+@media screen and (max-width:899px) and (min-width:540px) {
+    .about-us .information {
+        padding:30px 3.3rem
+    }
+}
+@keyframes easeIn {
+    from {
+        opacity:0
+    }
+    to {
+        opacity:1
+    }
+}
+@keyframes scale {
+    from {
+        scale:0
+    }
+    to {
+        scale:1
+    }
+}
+@media screen and (max-height:365px) {
+    .span2,.span1 {
+        line-height:12px
+    }
+}
