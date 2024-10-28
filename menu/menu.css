@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: absolute;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 40px;
+    background-color: var(--background);
+    overflow-y: scroll;
+}
+
+.food-menu-header a,.food-name, .food-discription,.food-price, .food-menu-title {
+    color: var(--color-text);
+    transition: color 400ms ease-in-out;
+}
+
+.food-top{
+    margin-top: 5rem;
+}
+
+.food-container{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 4%;
+    z-index: 11111;
+    /* background-color: aqua; */
+}
+
+.food-menu-header{
+    background-color: rgba(206, 206, 205, 0.516);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin:auto;
+    flex-direction: row;
+    font-size: 1rem;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    width: 90%;
+    height: 100%;
+    border-radius: 3px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.food-menu-header img{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+}
+
+.food-menu-header a{
+    text-decoration: none;
+}
+
+.food-item{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: max-content;
+    width: 97vw;
+    margin: auto;
+    margin: 17px 0;
+    /* background-color: antiquewhite; */
+    /* margin:80px 5px 10px 25px; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.food-about{
+    display: flex;    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 70%;
+    height: 100%;
+    margin-left: 6%;
+    /* background-color: beige; */
+}
+
+.food-name{
+    font-size: 1.5rem;
+    margin-bottom: 3px;
+    font-weight: 540;
+}
+
+.food-discription{
+    font-size: 0.7rem;
+}
+
+.food-price{
+    display: flex;    
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width: 20%;
+    margin-right:5.5%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.food-menu-title{
+    font-weight: 600;
+    font-size: 1.5rem;
+    font-family: 'Cedarville Cursive', cursive, sans-serif;
+    margin: 10px 0;
+    margin-left: 6%;
+}
+
+
+.active{
+    font-weight: 800;
+}
+
+.food-item{
+    animation: fade 300ms ease;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .food-menu-header{
+        font-size: 0.7rem;
+    }
+}
+
+/* the day night toggle */
+
+html.light{
+    --background: white;
+    --color-text: black;
+}
+
+html.dark{
+    --background: black;
+    --color-text: white;
+}
+
+.toggle-switch{
+    position: absolute;
+    top: 88px;
+    right: 5.5%;
+}
+
+#toggleSwitch{
+    position: absolute;
+    visibility: hidden;
+}
+
+.toggle-label{
+    display: flex;
+    background-color: rgba(206, 206, 205, 0.516);;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(106, 89, 89, 0.17);
+    width: 40px;
+    height: 23px;
+    border-radius: 2rem;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.ball-img{
+    height: 100%;
+    width: 100%;
+}
+
+.toggle-switch .ball .ball-img img{
+    height: 13px;
+    background: transparent;
+    /* pointer-events: none; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    filter: invert(100%) sepia(0%) saturate(7489%) hue-rotate(270deg) brightness(98%) contrast(104%);
+}
+
+.display{
+    display: none;
+}
+
+.ball{
+    position: absolute;
+    /* transform: translateY(-50%); */
+    left: 2px;
+    z-index: -1;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: black;
+    transition: transform 400ms linear;
+}
+
+.ballShift{
+    transform: translateX(17.8px) rotate(360deg);
+}
