@@ -4,9 +4,9 @@
 Welcome to the FuelUp Restaurant Website! This is a front-end project that showcases my skills in web development. The website is designed to provide users with an engaging interface to explore the offerings of a fictional restaurant.
 
 ## Features
-- Responsive Design**: The website is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
-- User-Friendly Navigation**: Easy navigation allows users to find information quickly.
-- 
+- Responsive Design: The website is fully responsive, ensuring a seamless experience on both desktop and mobile devices.
+- User-Friendly Navigation: Easy navigation allows users to find information quickly.
+  
 ## Technologies Used
 - HTML: For structuring the content.
 - CSS: For styling and layout.
